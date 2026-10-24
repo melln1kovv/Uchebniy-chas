@@ -1,0 +1,277 @@
+@font-face {
+    font-family: 'Montserrat_Regular';
+    src: url('../fonts/Montserrat-Regular.woff');
+}
+
+@font-face {
+    font-family: 'Montserrat_Medium';
+    src: url('../fonts/Montserrat-Medium.woff');
+}
+
+@font-face {
+    font-family: 'Montserrat_Bold';
+    src: url('../fonts/Montserrat-Bold.woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat_Regular';
+    font-size: 16px;
+    background: #f5f9ff;
+    
+}
+
+a {
+    color: #1769da;
+    text-decoration: none;
+}
+
+p {
+    line-height: 24px;
+}
+
+.container {
+    width: 1280px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main {
+    height: 500px;
+}
+
+.header {
+    background: white;
+    border-bottom: 1px solid #dfeafa;
+}
+
+.header__inner {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    color: #183257;
+    font-family: 'Montserrat_Medium';
+    font-size: 24px;
+}
+
+.header__logo-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.header__nav {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.header__link {
+    color: #526985;
+    font-family: 'Montserrat_Medium';
+    font-size: 16px;
+}
+
+.header__link--active {
+    color: #1769da;
+    font-family: 'Montserrat_Bold';
+}
+
+.footer {
+    background-color: white;
+    border-top: 1px solid #dfeafa;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer__brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer__brand p {
+    color: #526985;
+    font-size: 14px;
+}
+
+.footer__image {
+    width: 50px;
+    height: 50px;
+}
+
+.footer__contacts {
+    color: #526985;
+    text-align: right;
+    font-size: 14px;
+}
+
+b {
+    color: #183257;
+}
+
+.button {
+    display: inline-block;
+    background: #1769da;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-family: 'Montserrat_Medium';
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #1252a8;
+}
+
+.button--outline {
+    background: white;
+    color: #1769da;
+    border: 1px solid #1769da;
+}
+
+.button--outline:hover {
+    background: #e9f3ff;
+}
+
+.button--small {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form__group {
+    margin-bottom: 20px;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Montserrat_Regular';
+    font-size: 14px;
+}
+
+.form__input {
+    width: 500px;
+    height: 50px;
+    background: white;
+    border: 1px solid #cddbeb;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Montserrat_Medium';
+    font-size: 14px;
+    color: #183257;
+}
+
+textarea.form__input {
+    height: 100px;
+}
+
+.form__submit {
+    width: 500px;
+    margin-top: 15px;
+}
+
+.status {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.status--new {
+    background: #dbeeff;
+    color: #1760a9;
+}
+
+.status--work {
+    background: #fff0ca;
+    color: #976000;
+}
+
+.status--done {
+    background: #d8f5e8;
+    color: #177449;
+}
+
+.status--cancel {
+    background: #ffe0e5;
+    color: #ac3042;
+}
+
+@media (max-width: 1350px) {
+    .container {
+        width: 900px;
+    }
+    .header__nav {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 950px) {
+    .container {
+        width: 560px;
+    }
+    .header__inner {
+        height: auto;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .header__nav {
+        justify-content: center;
+    }
+    .footer {
+        height: auto;
+    }
+    .footer__inner {
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 320px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .header__nav {
+        gap: 10px;
+    }
+    .header__link {
+        font-size: 12px;
+    }
+    .form__input, .form__submit {
+        width: 280px;
+    }
+    .footer__inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer__contacts {
+        text-align: left;
+        margin-top: 20px;
+    }
+}
