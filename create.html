@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новая заявка | Учебный час</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a class="header__logo" href="index.html"><img class="header__logo-image" src="img/logo.svg"
+                    alt="Логотип">Учебный час</a>
+            <nav class="header__nav">
+                <a class="header__link" href="index.html">Главная</a>
+                <a class="header__link" href="register.html">Регистрация</a>
+                <a class="header__link" href="login.html">Вход</a>
+                <a class="header__link" href="orders.html">Мои заявки</a>
+                <a class="header__link header__link--active" href="create.html">Новая заявка</a>
+                <a class="header__link" href="admin.html">Администратор</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="form-page">
+            <div class="container">
+                <div class="form-page__card">
+                    <div class="form-page__heading">
+                        <h1 class="form-page__title">Новая заявка</h1>
+                        <p class="form-page__text">Расскажите, какой курс вам нужен, и мы поможем записаться</p>
+                    </div>
+                    <form class="form" action="" method="post">
+                        <div class="form__group">
+                            <label class="form__label" for="subject">Предмет *</label>
+                            <select class="form__input" id="subject" name="subject" required>
+                                <option value="">Выберите значение</option>
+                                <option>Математика</option>
+                                <option>Русский язык</option>
+                                <option>Английский язык</option>
+                                <option>Физика</option>
+                                <option>Информатика</option>
+                                <option>История</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="lesson_type">Тип занятия *</label>
+                            <select class="form__input" id="lesson_type" name="lesson_type" required>
+                                <option value="">Выберите значение</option>
+                                <option>Индивидуальное</option>
+                                <option>Групповое</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="goal">Цель занятия *</label>
+                            <select class="form__input" id="goal" name="goal" required>
+                                <option value="">Выберите значение</option>
+                                <option>Подготовка к ОГЭ</option>
+                                <option>Подготовка к ЕГЭ</option>
+                                <option>Повышение успеваемости</option>
+                                <option>Разбор сложных тем</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="lesson_time">Удобное время *</label>
+                            <input class="form__input" id="lesson_time" name="lesson_time" type="text" placeholder="Например: вторник, 16:00" required>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="comment">Дополнительная информация *</label>
+                            <textarea class="form__input form__input--textarea" id="comment" name="comment" placeholder="Расскажите о пожеланиях к занятиям" required></textarea>
+                        </div>
+                        <button class="button form__submit" type="submit">Отправить заявку</button>
+                    </form>
+                    <p class="form-page__bottom"><a href="orders.html">← Назад к моим заявкам</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand"><img class="footer__image" src="img/logo.svg" alt="Логотип">
+                <div><b>Учебный час</b>
+                    <p>Курсы по школьным предметам</p>
+                </div>
+            </div>
+            <div class="footer__contacts">
+                <p>+7 (900) 123-45-67</p>
+                <p>info@uchebny-chas.ru</p>
+                <p>© 2026 Учебный час</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

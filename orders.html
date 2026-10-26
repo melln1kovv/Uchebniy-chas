@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои заявки | Учебный час</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a class="header__logo" href="index.html"><img class="header__logo-image" src="img/logo.svg" alt="Логотип">Учебный час</a>
+            <nav class="header__nav">
+                <a class="header__link" href="index.html">Главная</a>
+                <a class="header__link" href="register.html">Регистрация</a>
+                <a class="header__link" href="login.html">Вход</a>
+                <a class="header__link header__link--active" href="orders.html">Мои заявки</a>
+                <a class="header__link" href="create.html">Новая заявка</a>
+                <a class="header__link" href="admin.html">Администратор</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="dashboard container">
+            <div class="dashboard__heading">
+                <div>
+                    <span class="sec-heading__eyebrow">ЛИЧНЫЙ КАБИНЕТ</span>
+                    <h1 class="dashboard__title">Мои заявки</h1>
+                </div>
+                <a class="button" href="create.html">+ Новая заявка</a>
+            </div>
+            <div class="orders__grid">
+                <article class="order-card">
+                    <div class="order-card__top">
+                        <div>
+                            <span class="order-card__number">Заявка № 1001</span>
+                            <h2 class="order-card__title">Математика</h2>
+                        </div>
+                        <span class="status status--new">Новая</span>
+                    </div>
+                    <div class="order-card__info">
+                        <p><b>Формат:</b> Индивидуальное</p>
+                        <p><b>Цель:</b> Подготовка к ОГЭ</p>
+                        <p><b>Время:</b> Понедельник, 16:00</p>
+                        <p><b>Комментарий:</b> Хочу записаться на курс.</p>
+                    </div>
+                </article>
+                <article class="order-card">
+                    <div class="order-card__top">
+                        <div>
+                            <span class="order-card__number">Заявка № 1002</span>
+                            <h2 class="order-card__title">Русский язык</h2>
+                        </div>
+                        <span class="status status--work">В работе</span>
+                    </div>
+                    <div class="order-card__info">
+                        <p><b>Формат:</b> Групповое</p>
+                        <p><b>Цель:</b> Повышение успеваемости</p>
+                        <p><b>Время:</b> Среда, 17:00</p>
+                        <p><b>Комментарий:</b> Хочу записаться на курс.</p>
+                    </div>
+                </article>
+                <article class="order-card">
+                    <div class="order-card__top">
+                        <div>
+                            <span class="order-card__number">Заявка № 1003</span>
+                            <h2 class="order-card__title">Английский язык</h2>
+                        </div>
+                        <span class="status status--done">Выполнена</span>
+                    </div>
+                    <div class="order-card__info">
+                        <p><b>Формат:</b> Индивидуальное</p>
+                        <p><b>Цель:</b> Подготовка к ЕГЭ</p>
+                        <p><b>Время:</b> Пятница, 15:00</p>
+                        <p><b>Комментарий:</b> Хочу записаться на курс.</p>
+                    </div>
+                    <form class="review" action="" method="post"><label class="form__label" for="review_text">Оставьте
+                            отзыв о занятиях</label><textarea class="form__input" id="review_text" name="review_text"
+                            placeholder="Напишите ваш отзыв" required></textarea><button class="button button--small"
+                            type="submit">Оставить отзыв</button></form>
+                </article>
+                <article class="order-card">
+                    <div class="order-card__top">
+                        <div>
+                            <span class="order-card__number">Заявка № 1004</span>
+                            <h2 class="order-card__title">Физика</h2>
+                        </div>
+                        <span class="status status--cancel">Отменена</span>
+                    </div>
+                    <div class="order-card__info">
+                        <p><b>Формат:</b> Групповое</p>
+                        <p><b>Цель:</b> Разбор сложных тем</p>
+                        <p><b>Время:</b> Вторник, 18:00</p>
+                        <p><b>Комментарий:</b> Хочу записаться на курс.</p>
+                    </div>
+                    <p class="order-card__reason"><b>Причина отмены:</b> Нет свободных мест на выбранное время.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand"><img class="footer__image" src="img/logo.svg" alt="Логотип">
+                <div><b>Учебный час</b>
+                    <p>Курсы по школьным предметам</p>
+                </div>
+            </div>
+            <div class="footer__contacts">
+                <p>+7 (900) 123-45-67</p>
+                <p>info@uchebny-chas.ru</p>
+                <p>© 2026 Учебный час</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

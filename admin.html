@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель администратора | Учебный час</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a class="header__logo" href="index.html"><img class="header__logo-image" src="img/logo.svg" alt="Логотип">Учебный час</a>
+            <nav class="header__nav">
+                <a class="header__link" href="index.html">Главная</a>
+                <a class="header__link" href="register.html">Регистрация</a>
+                <a class="header__link" href="login.html">Вход</a>
+                <a class="header__link" href="orders.html">Мои заявки</a>
+                <a class="header__link" href="create.html">Новая заявка</a>
+                <a class="header__link header__link--active" href="admin.html">Администратор</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="admin container">
+            <div class="section-heading">
+                <span class="sec-heading__eyebrow">УПРАВЛЕНИЕ СЕРВИСОМ</span>
+                <h1 class="dashboard__title">Администраторская панель заявок</h1>
+            </div>
+            <form class="admin__filter" action="" method="post"><label for="filter">Статус заявки</label><select
+                    id="filter" name="filter">
+                    <option>Все статусы</option>
+                    <option>Новая</option>
+                    <option>В работе</option>
+                    <option>Выполнена</option>
+                    <option>Отменена</option>
+                </select><button class="button button--small" type="submit">Показать</button></form>
+            <div class="admin__table-wrap">
+                <table class="admin__table">
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>ФИО клиента</th>
+                            <th>Телефон</th>
+                            <th>Предмет</th>
+                            <th>Тип занятия</th>
+                            <th>Цель</th>
+                            <th>Удобное время</th>
+                            <th>Статус</th>
+                            <th>Изменить статус</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#1001</td>
+                            <td>Иванов И.И.</td>
+                            <td>+7(900)111-22-33</td>
+                            <td>Математика</td>
+                            <td>Индивидуальное</td>
+                            <td>ОГЭ</td>
+                            <td>Пн, 16:00</td>
+                            <td><span class="status status--new">Новая</span></td>
+                            <td>
+                                <form class="admin__action" action="" method="post"><label
+                                        for="state_0">Статус</label><select id="state_0" name="status"
+                                        class="admin__select">
+                                        <option selected>Новая</option>
+                                        <option>В работе</option>
+                                        <option>Выполнена</option>
+                                        <option>Отменена</option>
+                                    </select><label for="reason_0">Причина отмены</label><input id="reason_0"
+                                        class="admin__input" name="reason" type="text"
+                                        placeholder="Если отменена"><button class="button button--small"
+                                        type="submit">Сохранить</button></form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#1002</td>
+                            <td>Петрова А.С.</td>
+                            <td>+7(900)222-33-44</td>
+                            <td>Русский язык</td>
+                            <td>Групповое</td>
+                            <td>Успеваемость</td>
+                            <td>Ср, 17:00</td>
+                            <td><span class="status status--work">В работе</span></td>
+                            <td>
+                                <form class="admin__action" action="" method="post"><label
+                                        for="state_1">Статус</label><select id="state_1" name="status"
+                                        class="admin__select">
+                                        <option>Новая</option>
+                                        <option selected>В работе</option>
+                                        <option>Выполнена</option>
+                                        <option>Отменена</option>
+                                    </select><label for="reason_1">Причина отмены</label><input id="reason_1"
+                                        class="admin__input" name="reason" type="text"
+                                        placeholder="Если отменена"><button class="button button--small"
+                                        type="submit">Сохранить</button></form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#1003</td>
+                            <td>Сидоров П.А.</td>
+                            <td>+7(900)333-44-55</td>
+                            <td>Английский язык</td>
+                            <td>Индивидуальное</td>
+                            <td>ЕГЭ</td>
+                            <td>Пт, 15:00</td>
+                            <td><span class="status status--done">Выполнена</span></td>
+                            <td>
+                                <form class="admin__action" action="" method="post"><label
+                                        for="state_2">Статус</label><select id="state_2" name="status"
+                                        class="admin__select">
+                                        <option>Новая</option>
+                                        <option>В работе</option>
+                                        <option selected>Выполнена</option>
+                                        <option>Отменена</option>
+                                    </select><label for="reason_2">Причина отмены</label><input id="reason_2"
+                                        class="admin__input" name="reason" type="text"
+                                        placeholder="Если отменена"><button class="button button--small"
+                                        type="submit">Сохранить</button></form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#1004</td>
+                            <td>Кузнецова М.В.</td>
+                            <td>+7(900)444-55-66</td>
+                            <td>Физика</td>
+                            <td>Групповое</td>
+                            <td>Разбор тем</td>
+                            <td>Вт, 18:00</td>
+                            <td><span class="status status--cancel">Отменена</span></td>
+                            <td>
+                                <form class="admin__action" action="" method="post"><label
+                                        for="state_3">Статус</label><select id="state_3" name="status"
+                                        class="admin__select">
+                                        <option>Новая</option>
+                                        <option>В работе</option>
+                                        <option>Выполнена</option>
+                                        <option selected>Отменена</option>
+                                    </select><label for="reason_3">Причина отмены</label><input id="reason_3"
+                                        class="admin__input" name="reason" type="text"
+                                        placeholder="Если отменена"><button class="button button--small"
+                                        type="submit">Сохранить</button></form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#1005</td>
+                            <td>Смирнов К.Д.</td>
+                            <td>+7(900)555-66-77</td>
+                            <td>Информатика</td>
+                            <td>Индивидуальное</td>
+                            <td>ОГЭ</td>
+                            <td>Чт, 14:00</td>
+                            <td><span class="status status--new">Новая</span></td>
+                            <td>
+                                <form class="admin__action" action="" method="post"><label
+                                        for="state_4">Статус</label><select id="state_4" name="status"
+                                        class="admin__select">
+                                        <option selected>Новая</option>
+                                        <option>В работе</option>
+                                        <option>Выполнена</option>
+                                        <option>Отменена</option>
+                                    </select><label for="reason_4">Причина отмены</label><input id="reason_4"
+                                        class="admin__input" name="reason" type="text"
+                                        placeholder="Если отменена"><button class="button button--small"
+                                        type="submit">Сохранить</button></form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#1006</td>
+                            <td>Орлова Е.Н.</td>
+                            <td>+7(900)666-77-88</td>
+                            <td>История</td>
+                            <td>Групповое</td>
+                            <td>ЕГЭ</td>
+                            <td>Сб, 12:00</td>
+                            <td><span class="status status--work">В работе</span></td>
+                            <td>
+                                <form class="admin__action" action="" method="post"><label
+                                        for="state_5">Статус</label><select id="state_5" name="status"
+                                        class="admin__select">
+                                        <option>Новая</option>
+                                        <option selected>В работе</option>
+                                        <option>Выполнена</option>
+                                        <option>Отменена</option>
+                                    </select><label for="reason_5">Причина отмены</label><input id="reason_5"
+                                        class="admin__input" name="reason" type="text"
+                                        placeholder="Если отменена"><button class="button button--small"
+                                        type="submit">Сохранить</button></form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand"><img class="footer__image" src="img/logo.svg" alt="Логотип">
+                <div><b>Учебный час</b>
+                    <p>Курсы по школьным предметам</p>
+                </div>
+            </div>
+            <div class="footer__contacts">
+                <p>+7 (900) 123-45-67</p>
+                <p>info@uchebny-chas.ru</p>
+                <p>© 2026 Учебный час</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

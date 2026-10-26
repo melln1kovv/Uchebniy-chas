@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация | Учебный час</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a class="header__logo" href="index.html"><img class="header__logo-image" src="img/logo.svg" alt="Логотип">Учебный час</a>
+            <nav class="header__nav">
+                <a class="header__link" href="index.html">Главная</a>
+                <a class="header__link header__link--active" href="register.html">Регистрация</a>
+                <a class="header__link" href="login.html">Вход</a>
+                <a class="header__link" href="orders.html">Мои заявки</a>
+                <a class="header__link" href="create.html">Новая заявка</a>
+                <a class="header__link" href="admin.html">Администратор</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="form-page">
+            <div class="container">
+                <div class="form-page__card">
+                    <div class="form-page__heading">
+                        <h1 class="form-page__title">Регистрация</h1>
+                        <p class="form-page__text">Создай личный кабинет в «Учебном часе». <br> Здесь будут храниться твои заявки, выбранные предметы и информация об их рассмотрении</p>
+                    </div>
+                    <form class="form" action="" method="post">
+                        <div class="form__group">
+                            <label class="form__label" for="full_name">ФИО *</label>
+                            <input class="form__input" id="full_name" name="full_name" type="text" placeholder="Иванов Иван Иванович" pattern="[А-Яа-яЁё ]+" required></div>
+                        <div class="form__group">
+                            <label class="form__label" for="username">Логин *</label>
+                            <input class="form__input" id="username" name="username" type="text" placeholder="ivan123" minlength="6" pattern="[A-Za-z0-9]+" required></div>
+                            <p class="form__error">Этот логин уже занят</p>
+                        <div class="form__group">
+                            <label class="form__label" for="password">Пароль *</label>
+                            <input class="form__input" id="password" name="password" type="password" placeholder="Не меньше 6 символов" minlength="6" required></div>
+                        <div class="form__group">
+                            <label class="form__label" for="phone">Телефон *</label>
+                            <input class="form__input" id="phone" name="phone" type="tel" placeholder="+7(999)-123-45-67" pattern="\+7\([0-9]{3}\)-[0-9]{3}-[0-9]{2}-[0-9]{2}" required></div>
+                        <div class="form__group">
+                            <label class="form__label" for="email">Email *</label>
+                            <input class="form__input" id="email" name="email" type="email" placeholder="example@mail.ru" required></div>
+                        <button class="button form__submit" type="submit">Зарегистрироваться</button>
+                    </form>
+                    <p class="form-page__bottom">Уже есть аккаунт? <a href="login.html">Войти</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand"><img class="footer__image" src="img/logo.svg" alt="Логотип">
+                <div><b>Учебный час</b>
+                    <p>Курсы по школьным предметам</p>
+                </div>
+            </div>
+            <div class="footer__contacts">
+                <p>+7 (900) 123-45-67</p>
+                <p>info@uchebny-chas.ru</p>
+                <p>© 2026 Учебный час</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
