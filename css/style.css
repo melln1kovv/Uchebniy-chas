@@ -22,7 +22,7 @@
 body {
     font-family: 'Montserrat_Regular';
     font-size: 16px;
-    background: #f5f9ff;
+    background-color: #f5f9ff;
     
 }
 
@@ -42,12 +42,8 @@ p {
     padding-right: 20px;
 }
 
-.main {
-    height: 500px;
-}
-
 .header {
-    background: white;
+    background-color: white;
     border-bottom: 1px solid #dfeafa;
 }
 
@@ -75,7 +71,7 @@ p {
 
 .header__nav {
     display: flex;
-    gap: 30px;
+    gap: 50px;
     flex-wrap: wrap;
 }
 
@@ -90,9 +86,110 @@ p {
     font-family: 'Montserrat_Bold';
 }
 
+.sec {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sec__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec__tag {
+    color: #1769da;
+    font-family: 'Montserrat_Medium';
+    font-size: 14px;
+}
+
+.sec__title {
+    color: black;
+    font-size: 48px;
+}
+
+.sec__text {
+    color: #526985;
+    width: 600px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #1769da;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-family: 'Montserrat_Medium';
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #1252a8;
+}
+
+.button--outline {
+    background-color: white;
+    color: #1769da;
+    border: 1px solid #1769da;
+}
+
+.button--outline:hover {
+    background-color: #e9f3ff;
+}
+
+.button--small {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.sec__buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.sec__picture {
+    width: 500px;
+    height: 500px;
+}
+
+.sec-heading {
+    margin-bottom: 30px;
+}
+
+.sec-heading__eyebrow {
+    color: #1769da;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.sec-heading__title {
+    color: #183257;
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sec-heading p {
+    color: #526985;
+}
+
 .footer {
     background-color: white;
     border-top: 1px solid #dfeafa;
+    height: 100px;
+}
+
+b {
+    color: #183257;
 }
 
 .footer__inner {
@@ -101,6 +198,7 @@ p {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    height: 100px;
 }
 
 .footer__brand {
@@ -125,40 +223,73 @@ p {
     font-size: 14px;
 }
 
-b {
-    color: #183257;
+.subject {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.button {
-    display: inline-block;
-    background: #1769da;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 15px;
-    font-family: 'Montserrat_Medium';
+.subject__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.subject__card {
+    width: 400px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.subject__icon {
+    width: 50px;
+    height: 50px;
+}
+
+.subject__name {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.subject__text {
+    color: #526985;
     font-size: 16px;
-    text-align: center;
-    cursor: pointer;
 }
 
-.button:hover {
-    background: #1252a8;
+.steps {
+    background-color: #e9f3ff;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.button--outline {
-    background: white;
+.steps__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.steps__item {
+    width: 400px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.steps__number {
     color: #1769da;
-    border: 1px solid #1769da;
+    font-family: 'Montserrat_Bold';
+    font-size: 40px;
 }
 
-.button--outline:hover {
-    background: #e9f3ff;
+.steps__title {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.button--small {
-    padding: 10px;
-    font-size: 14px;
+.steps__text {
+    color: #526985;
+    font-size: 16px;
 }
 
 .form__group {
@@ -175,13 +306,20 @@ b {
 .form__input {
     width: 500px;
     height: 50px;
-    background: white;
+    background-color: white;
     border: 1px solid #cddbeb;
     border-radius: 5px;
     padding: 10px;
     font-family: 'Montserrat_Medium';
     font-size: 14px;
     color: #183257;
+}
+
+.form__error {
+    color: #ac3042;
+    font-family: 'Montserrat_Medium';
+    font-size: 14px;
+    margin-bottom: 15px;
 }
 
 textarea.form__input {
@@ -193,6 +331,190 @@ textarea.form__input {
     margin-top: 15px;
 }
 
+.form-page {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.form-page__card {
+    width: 600px;
+    margin: auto;
+    background-color: white;
+    border: 1px solid #dfeafa;
+    border-radius: 15px;
+    padding: 50px;
+}
+
+.form-page__heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-page__title {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.form-page__text {
+    color: #526985;
+    font-size: 16px;
+}
+
+.form-page__bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.dashboard {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.dashboard__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.dashboard__title {
+    font-size: 36px;
+    margin-top: 15px;
+}
+
+.dashboard__heading p {
+    color: #526985;
+}
+
+.orders__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.order-card {
+    width: 600px;
+    background-color: white;
+    border: 1px solid #dfeafa;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.order-card__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.order-card__number {
+    color: #526985;
+    font-size: 16px;
+}
+
+.order-card__title {
+    margin-top: 15px;
+}
+
+.order-card__info p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.order-card__reason {
+    color: #ac3042;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.review {
+    border-top: 1px solid #dfeafa;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.review .button {
+    margin-top: 10px;
+}
+
+.admin {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.admin__filter {
+    background-color: white;
+    border: 1px solid #dfeafa;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.admin__filter label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.admin__filter select {
+    background-color: white;
+    border: 1px solid #cddbeb;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.admin__table-wrap {
+    overflow-x: auto;
+    background-color: white;
+    border: 1px solid #dfeafa;
+    border-radius: 10px;
+}
+
+.admin__table {
+    width: 1360px;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.admin__table th {
+    background-color: #e9f3ff;
+    text-align: left;
+    padding: 10px;
+}
+
+.admin__table td {
+    border-top: 1px solid #dfeafa;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.admin__action {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 160px;
+}
+
+.admin__action label {
+    font-size: 12px;
+    color: #526985;
+}
+
+.admin__select,
+.admin__input {
+    font-family: 'Montserrat_Medium';
+    width: 160px;
+    padding: 10px;
+    border: 1px solid #cddbeb;
+    border-radius: 5px;
+}
+
 .status {
     display: inline-block;
     padding: 10px;
@@ -202,22 +524,22 @@ textarea.form__input {
 }
 
 .status--new {
-    background: #dbeeff;
+    background-color: #dbeeff;
     color: #1760a9;
 }
 
 .status--work {
-    background: #fff0ca;
+    background-color: #fff0ca;
     color: #976000;
 }
 
 .status--done {
-    background: #d8f5e8;
+    background-color: #d8f5e8;
     color: #177449;
 }
 
 .status--cancel {
-    background: #ffe0e5;
+    background-color: #ffe0e5;
     color: #ac3042;
 }
 
@@ -225,27 +547,94 @@ textarea.form__input {
     .container {
         width: 900px;
     }
+
     .header__nav {
         gap: 20px;
+    }
+
+    .sec__text {
+        width: 500px;
+    }
+
+    .sec__picture {
+        width: 350px;
+        height: 350px;
+    }
+
+    .subject__card,
+    .steps__item {
+        width: 280px;
+    }
+
+    .order-card {
+        width: 440px;
     }
 }
 
 @media (max-width: 950px) {
     .container {
         width: 560px;
+        justify-content: center;
     }
+
     .header__inner {
         height: auto;
         flex-direction: column;
         padding-top: 20px;
         padding-bottom: 20px;
     }
+
     .header__nav {
         justify-content: center;
+        gap: 20px;
     }
+
+    .sec__inner {
+        flex-direction: column;
+    }
+
+    .sec__content {
+        width: 560px;
+    }
+
+    .sec__text {
+        width: 560px;
+    }
+
+    .sec__picture {
+        width: 400px;
+        height: 400px;
+    }
+
+    .subject__card {
+        width: 260px;
+    }
+
+    .steps__item,
+    .order-card {
+        width: 560px;
+    }
+
+    .form-page__card {
+        width: 560px;
+        padding: 30px;
+    }
+
+    .form__input,
+    .form__submit {
+        width: 500px;
+    }
+
+    .dashboard__heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
     .footer {
         height: auto;
     }
+
     .footer__inner {
         height: auto;
     }
@@ -257,21 +646,68 @@ textarea.form__input {
         padding-left: 0;
         padding-right: 0;
     }
+
     .header__nav {
         gap: 10px;
     }
+
     .header__link {
         font-size: 12px;
     }
-    .form__input, .form__submit {
+
+    .sec__content,
+    .sec__text {
+        width: 320px;
+    }
+
+    .sec__title {
+        font-size: 32px;
+    }
+
+    .sec__buttons {
+        flex-direction: column;
+    }
+
+    .sec__picture {
+        width: 300px;
+        height: 300px;
+    }
+
+    .sec-heading__title {
+        font-size: 28px;
+    }
+
+    .subject__card,
+    .steps__item,
+    .order-card {
+        width: 320px;
+    }
+
+    .form-page__card {
+        width: 320px;
+        padding: 20px;
+    }
+
+    .form__input,
+    .form__submit {
         width: 280px;
     }
+
+    .dashboard__heading,
+    .order-card__top,
+    .admin__filter {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
     .footer__inner {
         flex-direction: column;
         align-items: flex-start;
+        gap: 20px;
     }
+
     .footer__contacts {
         text-align: left;
-        margin-top: 20px;
     }
 }
