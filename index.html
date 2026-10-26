@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная | Учебный час</title>
-    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
         <div class="container header__inner">
-            <a class="header__logo" href="index.html"><img alt="Логотип" class="header__logo-image" src="img/logo.svg" />Учебный час</a>
+            <a class="header__logo" href="index.html"><img class="header__logo-image" src="img/logo.svg" alt="Логотип">Учебный час</a>
             <nav class="header__nav">
                 <a class="header__link header__link--active" href="index.html">Главная</a>
                 <a class="header__link" href="register.html">Регистрация</a>
@@ -21,11 +20,89 @@
             </nav>
         </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+        <section class="sec">
+            <div class="container sec__inner">
+                <div class="sec__content">
+                    <h1 class="sec__title">Курсы по школьным предметам для уверенного будущего</h1>
+                    <p class="sec__text">Вместе с нами можно разобраться в сложных темах, подготовиться к контрольной или уверенно начать новый учебный год</p>
+                    <span class="sec__tag">Учиться проще вместе - регистрируйся</span>
+                    <div class="sec__buttons">
+                        <a class="button" href="register.html">Зарегистрироваться</a>
+                        <a class="button button--outline" href="login.html">Войти</a>
+                    </div>
+                </div>
+                <img class="sec__picture" src="img/study.svg" alt="">
+            </div>
+        </section>
+        <section class="sec">
+            <div class="container sec-heading">
+                <span class="sec-heading__eyebrow">НАШИ НАПРАВЛЕНИЯ</span>
+                <h2 class="sec-heading__title">Выбери предмет, который хочется понять</h2>
+            </div>
+            <div class="container subject__grid">
+                <article class="subject__card">
+                    <img class="subject__icon" src="img/1.png" alt="математика фото">
+                    <h3 class="subject__name">Математика</h3>
+                    <p class="subject__text">Дроби, уравнения и различные задачи больше не будут казаться головоломкой <br> <br> Разбираем решения по шагам и учимся находить правильный ответ самостоятельно</p>
+                </article>
+                <article class="subject__card">
+                    <img class="subject__icon" src="img/2.png" alt="русский язык фото">
+                    <h3 class="subject__name">Русский язык</h3>
+                    <p class="subject__text">Обучим правилам, пунктуации и работе с сочинениями <br> <br> Научимся писать грамотнее и выражать свои мысли без страха ошибиться</p>
+                </article>
+                <article class="subject__card">
+                    <img class="subject__icon" src="img/3.png" alt="английский язык фото">
+                    <h3 class="subject__name">Английский язык</h3>
+                    <p class="subject__text">От первых разговорных фраз до сложной грамматики <br> <br> Расширяем словарный запас, тренируем произношение и учимся понимать живую речь</p>
+                </article>
+                <article class="subject__card">
+                    <img class="subject__icon" src="img/4.png" alt="физика фото">
+                    <h3 class="subject__name">Физика</h3>
+                    <p class="subject__text">Объясняем законы физики через понятные примеры из окружающего мира</p>
+                </article>
+                <article class="subject__card">
+                    <img class="subject__icon" src="img/5.png" alt="информатика фото">
+                    <h3 class="subject__name">Информатика</h3>
+                    <p class="subject__text">Знакомимся с алгоритмами, логическими задачами и основами программирования <br> <br> Учимся не только пользоваться технологиями, но и понимать их</p>
+                </article>
+                <article class="subject__card">
+                    <img class="subject__icon" src="img/6.png" alt="история фото">
+                    <h3 class="subject__name">История</h3>
+                    <p class="subject__text">Исследуем события прошлого и выясняем, как и чьи исторические решения повлияли на современный мир</p>
+                </article>
+            </div>
+        </section>
+        <section class="sec">
+            <div class="container">
+                <div class="sec-heading">
+                    <span class="sec-heading__eyebrow">У КАЖДОГО СВОЯ ЦЕЛЬ - МЫ ПОМОЖЕМ К НЕЙ ПРИБЛИЗИТЬСЯ</span>
+                    <h2 class="sec-heading__title">Как начать обучение?</h2>
+                </div>
+                <div class="steps__grid">
+                    <article class="steps__item">
+                        <span class="steps__number">01</span>
+                        <h3 class="steps__title">Создай аккаунт</h3>
+                        <p class="steps__text">Регистрация займет всего пару минут. <br> После нее ты сможешь оставлять заявки на интересующие занятия</p>
+                    </article>
+                    <article class="steps__item">
+                        <span class="steps__number">02</span>
+                        <h3 class="steps__title">Расскажи, чему хочешь научиться</h3>
+                        <p class="steps__text">Выбери предмет, подходящий формат уроков и удобное время</p>
+                    </article>
+                    <article class="steps__item">
+                        <span class="steps__number">03</span>
+                        <h3 class="steps__title">Следи за статусом</h3>
+                        <p class="steps__text">В личном кабинете можно посмотреть, на каком этапе находится рассмотрение заявки. После успешного рассмотрения, приступай к обучению</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="footer">
         <div class="container footer__inner">
             <div class="footer__brand">
-                <img alt="Логотип" class="footer__image" src="img/logo.svg"/>
+                <img class="footer__image" src="img/logo.svg" alt="Логотип">
                 <div>
                     <b>Учебный час</b>
                     <p>Курсы по школьным предметам</p>
@@ -39,4 +116,5 @@
         </div>
     </footer>
 </body>
+
 </html>
